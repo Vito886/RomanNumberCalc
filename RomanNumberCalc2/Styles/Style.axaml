@@ -1,0 +1,31 @@
+﻿<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Design.PreviewWith>
+        <Border Padding="20">
+            <!-- Add Controls for Previewer Here -->
+        </Border>
+    </Design.PreviewWith>
+
+	<Style Selector="Button.btn">
+		<Setter Property="VerticalAlignment" Value="Stretch"/>
+		<Setter Property="HorizontalAlignment" Value="Stretch"/>
+		<Setter Property="HorizontalContentAlignment" Value="Center"/>
+		<Setter Property="VerticalContentAlignment" Value="Center"/>
+		<Setter Property="FontSize" Value="36"/>
+		<Setter Property="Background" Value="#aaa"/>
+		<Setter Property="Foreground" Value="Black"/>
+		<Setter Property="CornerRadius" Value="0"/>
+		<Setter Property="Command" Value="{Binding OnClickCommand}"/>
+	</Style>
+
+	<Style Selector="TextBox.textBox">
+		<Setter Property="Focusable" Value="False"/>
+		<Setter Property="VerticalAlignment" Value="Stretch"/>
+		<Setter Property="HorizontalAlignment" Value="Stretch"/>
+		<Setter Property="TextAlignment" Value="Center"/>
+		<Setter Property="Padding" Value="0, 15, 0, 0"/>
+		<Setter Property="FontSize" Value="66"/>
+		<Setter Property="Text" Value="{Binding Output}"/>
+	</Style>
+	
+</Styles>

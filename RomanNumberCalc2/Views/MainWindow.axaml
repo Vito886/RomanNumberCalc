@@ -1,0 +1,33 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:RomanNumberCalc2.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="450" d:DesignHeight="450"
+        x:Class="RomanNumberCalc2.Views.MainWindow"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="RomanNumberCalc2"
+		Width="450"
+		Height="450">
+
+	<Window.Styles>
+		<StyleInclude Source="/Styles/Style.axaml"/>
+	</Window.Styles>
+
+	<Grid RowDefinitions="*,*,*,*" ColumnDefinitions="*,*,*,*">
+		<TextBox Classes="textBox" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4"></TextBox>
+		<Button Classes="btn" Grid.Row="1" Grid.Column="0" CommandParameter="I">I</Button>
+		<Button Classes="btn" Grid.Row="2" Grid.Column="0" CommandParameter="V">V</Button>
+		<Button Classes="btn" Grid.Row="3" Grid.Column="0" CommandParameter="X">X</Button>
+		<Button Classes="btn" Grid.Row="1" Grid.Column="1" CommandParameter="L">L</Button>
+		<Button Classes="btn" Grid.Row="2" Grid.Column="1" CommandParameter="C">C</Button>
+		<Button Classes="btn" Grid.Row="3" Grid.Column="1" CommandParameter="D">D</Button>
+		<Button Classes="btn" Grid.Row="1" Grid.Column="2" CommandParameter="M">M</Button>
+		<Button Classes="btn" Grid.Row="2" Grid.Column="2" CommandParameter="+">+</Button>
+		<Button Classes="btn" Grid.Row="3" Grid.Column="2" CommandParameter="-">-</Button>
+		<Button Classes="btn" Grid.Row="1" Grid.Column="3" CommandParameter="*">*</Button>
+		<Button Classes="btn" Grid.Row="2" Grid.Column="3" CommandParameter="/">/</Button>
+		<Button Classes="btn" Grid.Row="3" Grid.Column="3" CommandParameter="=">=</Button>
+	</Grid>
+
+</Window>
